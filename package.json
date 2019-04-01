@@ -1,0 +1,79 @@
+{
+  "name": "ui",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "homepage": "https://gitlab.com/civil-desk/ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/civil-desk/ui.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/civil-desk/ui/issues"
+  },
+  "version": "1.0.0",
+  "main": "lib/lib_exports.js",
+  "module": "lib/lib_exports.js",
+  "files": [
+    "lib",
+    "lib_bundle"
+  ],
+  "scripts": {
+    "build": "rearguard build --browser_lib",
+    "build:both": "rearguard build --both --browser_lib",
+    "build:release": "rearguard build -r --browser_lib",
+    "check_deps_on_npm": "rearguard check_deps_on_npm",
+    "check_deps_on_npm:install": "rearguard check_deps_on_npm --install_deps",
+    "prepublishOnly": "npm run build:both",
+    "start": "rearguard wds",
+    "start:release": "rearguard wds -r",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "lib/lib_exports.d.ts",
+  "dependencies": {
+    "history": "4.9.0",
+    "hoist-non-react-statics": "3.3.0",
+    "isomorphic-style-loader": "5.0.1",
+    "mobx": "5.9.4",
+    "mobx-react": "5.4.3",
+    "mobx-react-devtools": "6.1.1",
+    "mobx-utils": "5.2.0",
+    "moment": "2.24.0",
+    "normalize.css": "8.0.1",
+    "numeral": "2.0.6",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@types/node": "11.12.2",
+    "@types/numeral": "0.0.25",
+    "@types/react": "16.8.10",
+    "@types/react-dom": "16.8.3",
+    "husky": "1.3.1",
+    "prettier": "1.16.4",
+    "ts-node-dev": "1.0.0-pre.32",
+    "tslib": "1.9.3",
+    "tslint": "5.14.0",
+    "typescript": "3.4.1"
+  },
+  "rearguard": {
+    "context": "src",
+    "entry": "index.tsx",
+    "lib_entry": "lib_exports.ts",
+    "modules": [
+      "src"
+    ],
+    "output": {
+      "path": "dist",
+      "publicPath": "/"
+    },
+    "sync_project_deps": [],
+    "is_application": false,
+    "is_back_end": false,
+    "has_dll": false,
+    "has_browser_lib": true,
+    "load_on_demand": false,
+    "has_node_lib": false,
+    "publish_in_git": false
+  }
+}

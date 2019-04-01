@@ -1,0 +1,16 @@
+node_modules
+.env
+deferred_module_list.ts
+dll_bundle
+lib_bundle
+lib
+dist
+rearguard.json
+tsconfig.json
+tslint.json
+src/typings.d.ts
+.dockerignore
+.editorconfig
+.npmrc
+pre_publish.sh
+pre_publish_build_tmp

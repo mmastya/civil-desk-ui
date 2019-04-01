@@ -1,0 +1,58 @@
+:root {
+  --bg-general: #f0f0f0;
+  --popup-bg-general: #313347;
+  --menu-bg: #2e3e4e;
+  --sub-menu-bg: #2b3a49;
+  --sub-menu-hover: #283644;
+  --color-border: rgba(120, 130, 140, 0.2);
+  --bg-form-grey: #f6f6f6;
+  --bg-grey: #f0f0f0;
+  --button-grey: #C4C4C4;
+  --black-70: color(black a(70%));
+  --white: color(white a(87%));
+  --white-100: white;
+  --white-75: color(white a(75%));
+  --white-70: color(white a(70%));
+  --white-50: color(white a(50%));
+  --black-87: color(black a(87%));
+  --black-50: color(black a(50%));
+  --font-black: #373a3c;
+
+  --color-attention: #fcc100;
+  --color-attention-65: rgba(252, 193, 0, 0.65);
+  --color-attention-10: rgba(252, 193, 0, 0.1);
+  --color-attention-30: rgba(252, 193, 0, 0.3);
+  --color-badges-grey: #b8b8b8;
+  --color-pop-up-bg: #2e3e4e;
+  --color-pop-up-bg-95: color(#2e3e4e a(95%));
+  --color-pop-up-bg-85: color(#2e3e4e a(85%));
+
+  --color-table-green: rgb(39, 78, 19);
+  --color-table-light-geen: #93C480;
+  --color-table-light-geen-50: color(#93C480 a(50%));
+  --color-table-gray: #999993;
+  --color-table-light-gray: #b7b7b7;
+  --color-table-purple: #351c75;
+  --color-table-comments: #90f;
+  --color-table-attention: #f90;
+  --color-table-lite-orange: #ffae6b;
+  --color-table-yellow: yellow;
+  --color-table-red: red;
+  --color-table-beige: #fff2cc;
+  --color-table-beige-50: color(#fff2cc a(50%));
+  --color-table-braun: #b45f06;
+  --color-table-blue: #1155cc;
+  --color-table-light-blue: #3d85c6;
+  --color-table-light-blue-50: color(#3d85c6 a(50%));
+  --color-table-light-blue-25: color(#3d85c6 a(25%));
+  --color-table-note-blue: rgba(17, 85, 204, 0.2);
+
+  --color-duty-rest-regular: black;
+  --color-duty-rest-regular_extra: #674ea7;
+  --color-duty-rest-after_3_night_duties: #0000ff;
+  --color-duty-rest-after_daytime_flight_after_3_night_duties: #9900ff;
+  --color-duty-rest-day_off: #6aa84f;
+  --color-duty-notRest: red;
+  --color-duty-rest-GCA: #ff9900;
+  --color-duty-to-mach: red;
+}
