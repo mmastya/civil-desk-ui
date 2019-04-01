@@ -1,9 +1,9 @@
 import React from "react";
+import { browserHistory } from "store/browserHistory";
 import { EditorPage } from "./pages/EditorPage/EditorPage";
 import { LandingPage } from "./pages/LandingPage/LandingPage";
 import { PersonalPage } from "./pages/PersonalPage/PersonalPage";
 import { StiffnessPage } from "./pages/StiffnessPage/StiffnessPage";
-import { browserHistory } from "store/browserHistory";
 
 export function router() {
   const pathname: string = browserHistory.location.pathname;
