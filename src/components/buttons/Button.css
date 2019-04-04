@@ -1,0 +1,23 @@
+@import "vars/fonts.css";
+
+.button {
+  all: initial;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 0;
+  width: 115px;
+  height: 34px;
+  border-radius: 5px;
+}
+
+.primary {
+  color: #ffffff;
+  background-color: #ec4067;
+}
+
+.default {
+  color: #959eaf;
+}

@@ -1,5 +1,4 @@
 import StyleContext from "isomorphic-style-loader/StyleContext";
-import "normalize.css";
 import React, { Component } from "react";
 import s from "./App.css";
 

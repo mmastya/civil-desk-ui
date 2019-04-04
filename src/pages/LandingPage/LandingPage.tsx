@@ -9,3 +9,4 @@ export class LandingPage extends Component {
     return <LandingComposition {...landingAdapter} />;
   }
 }
+

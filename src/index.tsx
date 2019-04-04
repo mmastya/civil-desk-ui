@@ -3,6 +3,7 @@ import App from "pages/App/App";
 import React from "react";
 import ReactDOM from "react-dom";
 import { browserHistory } from "store/browserHistory";
+import s from "normalize.css";
 
 let container: Element | null;
 const insertCss = (...styles: any[]) => {
@@ -32,6 +33,8 @@ browserHistory.listen(() => {
 document.addEventListener("DOMContentLoaded", () => {
   container = document.createElement("div");
   document.body.appendChild(container);
+
+  s._insertCss();
 
   render(App);
 });
