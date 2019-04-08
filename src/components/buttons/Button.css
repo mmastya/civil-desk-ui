@@ -21,3 +21,12 @@
 .default {
   color: #959eaf;
 }
+
+.open {
+  color: #ec4067;
+  background-color: #ffffff;
+  border: 2px solid #ec4067;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}

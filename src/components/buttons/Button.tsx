@@ -5,7 +5,7 @@ import s from "./Button.css";
 
 interface IButton {
   title: string;
-  type?: "primary" | "defualt";
+  type?: "primary" | "defualt" | "open";
 }
 
 @withStyles(s)
@@ -17,6 +17,10 @@ export class Button extends Component<IButton, never> {
 
     if (type === "primary") {
       buttonType = s.primary;
+    }
+
+    if (type === "open") {
+      buttonType = s.open;
     }
 
     return (

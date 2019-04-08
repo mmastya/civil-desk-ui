@@ -1,0 +1,52 @@
+@import "vars/fonts.css";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-width: 1000px;
+  height: 400px;
+}
+
+.revers {
+  flex-direction: row-reverse;
+}
+
+.root > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin-right: 115px;
+}
+
+.root > div:last-child  {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.root > div:last-child > h3 {
+  color: #2f394e;
+  font-family: var(--font-family);
+  letter-spacing: -0.22px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.root > div:last-child > p {
+  width: 410px;
+  height: 150px;
+  color: #818a9b;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+

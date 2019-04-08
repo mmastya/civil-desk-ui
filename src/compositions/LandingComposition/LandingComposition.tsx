@@ -1,11 +1,11 @@
 import { ILandingComposition } from "interfaces/ILandingComposition";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
-import { AdvantageComposition } from "./compositions/AdvantageComposition";
+import { AdvantageComposition } from "./compositions/AdvantageComposition/AdvantageComposition";
 import { FooterComposition } from "./compositions/FooterComposition";
 import { HeaderComposition } from "./compositions/HeaderComposition/HeaderComposition";
 import { NewOpportunitiesComposition } from "./compositions/NewOpportunitiesComposition";
-import { OpportunitiesComposition } from "./compositions/OpportunitiesComposition";
+import { OpportunitiesComposition } from "./compositions/OpportunitiesComposition/OpportunitiesComposition";
 
 @observer
 export class LandingComposition extends Component<ILandingComposition, never> {
