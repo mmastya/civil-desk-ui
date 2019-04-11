@@ -1,0 +1,122 @@
+@import "vars/fonts.css";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.root > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 170px;
+  justify-content: center;
+}
+
+.root > div:nth-child(1) > h2 {
+  color: #2e384d;
+  font-family: var(--font-family);
+  font-weight: 550;
+  font-size: 36px;
+  margin: 0px;
+  margin-bottom: 25px;
+}
+
+.root > div:nth-child(1) > h3 {
+  color: #959eaf;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0px;
+}
+
+.root > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.root > div:nth-child(2) > iframe {
+  width: 450px;
+  height: 300px;
+  margin-right: 90px;
+}
+
+ .video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  height: 240px;
+  padding-top: 30px;
+}
+
+ .video > h3 {
+  color: #ec4067;
+  font-family: var(--font-family);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+ .video > p {
+  color: #959eaf;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px;
+}
+.video > h4 {
+  color: #ec4067;
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px;
+}
+
+.video > h4 > span {
+  color: #959eaf;
+}
+
+.root > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.root > div:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.root > div:nth-child(3) > div > h3 {
+  color: #959eaf;
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.root > div:nth-child(3) > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.root > div:nth-child(3) > ul > li {
+  margin-right: 50px;
+}
+
+
+
+
+

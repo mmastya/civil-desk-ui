@@ -2,9 +2,9 @@ import { ILandingComposition } from "interfaces/ILandingComposition";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import { AdvantageComposition } from "./compositions/AdvantageComposition/AdvantageComposition";
-import { FooterComposition } from "./compositions/FooterComposition";
+import { FooterComposition } from "./compositions/FooterComposition/FooterComposition";
 import { HeaderComposition } from "./compositions/HeaderComposition/HeaderComposition";
-import { NewOpportunitiesComposition } from "./compositions/NewOpportunitiesComposition";
+import { NewOpportunitiesComposition } from "./compositions/NewOpportunitiesComposition/NewOpportunitiesComposition";
 import { OpportunitiesComposition } from "./compositions/OpportunitiesComposition/OpportunitiesComposition";
 
 @observer
