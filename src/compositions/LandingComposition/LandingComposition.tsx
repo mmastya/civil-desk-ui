@@ -10,12 +10,14 @@ import { OpportunitiesComposition } from "./compositions/OpportunitiesCompositio
 @observer
 export class LandingComposition extends Component<ILandingComposition, never> {
   public render() {
-    return [
-      <HeaderComposition key="0" />,
-      <AdvantageComposition key="1" />,
-      <OpportunitiesComposition key="2" />,
-      <NewOpportunitiesComposition key="3" />,
-      <FooterComposition key="4" />
-    ];
+    return (
+      <div style={{ minWidth: "1200px" }}>
+        <HeaderComposition key="0" />
+        <AdvantageComposition key="1" />
+        <OpportunitiesComposition key="2" />
+        <NewOpportunitiesComposition key="3" />
+        <FooterComposition key="4" />
+      </div>
+    );
   }
 }

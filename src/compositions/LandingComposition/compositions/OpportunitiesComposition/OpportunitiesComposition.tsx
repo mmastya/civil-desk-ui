@@ -1,6 +1,7 @@
 import withStyles from "isomorphic-style-loader/withStyles";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
+import { CenterPage } from "../../../../components/center/CenterPage";
 import { Items } from "./components/Items/Items";
 import first_1 from "./images/first_1.png";
 import second_2 from "./images/second_2.png";
@@ -14,11 +15,11 @@ interface IOpportunitiesComposition {}
 export class OpportunitiesComposition extends Component<IOpportunitiesComposition, never> {
   public render() {
     return (
-      <div className={s.container}>
-        <div>
-          <h2>Возможности редактора</h2>
-        </div>
-        <div>
+      <CenterPage>
+        <div className={s.container}>
+          <div>
+            <h2>Возможности редактора</h2>
+          </div>
           <ul>
             <li>
               <Items
@@ -50,7 +51,7 @@ export class OpportunitiesComposition extends Component<IOpportunitiesCompositio
             </li>
           </ul>
         </div>
-      </div>
+      </CenterPage>
     );
   }
 }

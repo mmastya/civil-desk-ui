@@ -13,22 +13,36 @@
   flex-direction: row-reverse;
 }
 
+.root.revers > div:first-child {
+  margin-right: 0px;
+  margin-left: 115px;
+  padding-right: 50px;
+  padding-left: 0px;
+}
+
+.root.revers > div:last-child {
+  padding-right: 0px;
+  padding-left: 50px;
+}
+
 .root > div:first-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 460px;
   height: 100%;
   margin-right: 115px;
+  padding-left: 50px;
 }
 
 .root > div:last-child  {
-  width: 50%;
+  width: 460px;
   height: 100%;
   text-align: left;
   padding-top: 80px;
   box-sizing: border-box;
+  padding-right: 50px;
 }
 
 .root > div:last-child > h3 {
@@ -40,8 +54,6 @@
 }
 
 .root > div:last-child > p {
-  width: 410px;
-  height: 150px;
   color: #818a9b;
   font-family: var(--font-family);
   font-size: 16px;
