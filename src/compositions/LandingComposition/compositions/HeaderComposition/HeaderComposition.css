@@ -44,8 +44,9 @@
   text-align: center;
   color: #ffffff;
   font-family: var(--font-family);
-  font-weight: 700;
+  font-weight: 730;
   font-size: 30rem;
+  text-transform: uppercase;
 }
 
 .root p {

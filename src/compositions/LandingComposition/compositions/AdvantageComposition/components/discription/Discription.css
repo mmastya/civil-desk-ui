@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300rem;
+  max-width: 300rem;
 }
 
 .space > div {
@@ -20,6 +20,7 @@
   font-family: var(--font-family);
   margin: 0rem;
   margin-top: 30rem;
+  font-size: 22rem;
 }
 
 .space > p {

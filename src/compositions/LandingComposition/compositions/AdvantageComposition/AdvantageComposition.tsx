@@ -18,7 +18,7 @@ export class AdvantageComposition extends Component<IAdventageComposition, never
   public render() {
     return (
       <CenterPage>
-        <div className={s.block}>
+        <div className={s.root}>
           <div>
             <h2>Основные преимущества</h2>
           </div>

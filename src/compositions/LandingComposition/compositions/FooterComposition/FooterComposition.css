@@ -1,6 +1,5 @@
 @import "vars/fonts.css";
 
-
 .root {
   display: flex;
   flex-direction: column;
@@ -8,6 +7,8 @@
   width: 100%;
   background-color: #50597b;
   background-image: url('./image/background.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .root > div:nth-child(1) {
@@ -38,7 +39,6 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 60rem;
-
 }
 
 .root > div:nth-child(2) > form > input {

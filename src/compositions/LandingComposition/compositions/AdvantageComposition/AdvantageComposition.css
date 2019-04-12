@@ -1,13 +1,14 @@
 @import "vars/fonts.css";
 
-.block {
+.root {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #ffffff;
+  padding: 0 50rem;
 }
 
-.block > div:first-child {
+.root > div:first-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +16,7 @@
   height: 150rem;
 }
 
-.block > div:first-child h2{
+.root > div:first-child h2{
   text-align: center;
   color: #2e384d;
   font-size: 36rem;
@@ -24,7 +25,7 @@
   font-weight: 500;
 }
 
-.block > div:last-child > ul {
+.root > div:last-child > ul {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -35,7 +36,7 @@
   margin: 0rem;
 }
 
-.block > div:last-child > ul > li:nth-child(2) {
+.root > div:last-child > ul > li:nth-child(2) {
   margin-right: 100rem;
   margin-left: 100rem;
 }

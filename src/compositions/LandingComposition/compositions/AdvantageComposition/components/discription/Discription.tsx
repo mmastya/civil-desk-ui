@@ -1,4 +1,5 @@
 import { Button } from "components/buttons/Button";
+import { Picture } from "components/Picture/Picture";
 import withStyles from "isomorphic-style-loader/withStyles";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
@@ -19,11 +20,11 @@ export class Discription extends Component<IDiscription, never> {
     return (
       <div className={s.space}>
         <div>
-          <img src={img} />
+          <Picture src={img} />
         </div>
         <h3>{title}</h3>
         <p>{text}</p>
-        <div className={s. button_open}>{link ? <Button title="Открыть" type="open" /> : null}</div>
+        <div className={s.button_open}>{link ? <Button title="Открыть" type="open" /> : null}</div>
       </div>
     );
   }

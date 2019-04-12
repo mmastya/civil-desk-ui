@@ -26,9 +26,10 @@ export class LandingPage extends Component {
       } else if (width >= 1400 && width < 2000) {
         baseFontSize = Math.min(width / 1400, height / 960);
       } else if (width >= 1024 && width < 1400) {
-        baseFontSize = Math.min(width / 1024, height / 768);
+        baseFontSize = Math.min(width / 1200, height / 768);
       } else {
-        baseFontSize = Math.min(width / 375, height / 667);
+        // baseFontSize = Math.min(width / 375, height / 667);
+        baseFontSize = Math.min(width / 1024, height / 768);
       }
 
       this.htmlElement.style.cssText = `font-size: ${baseFontSize}px;`;

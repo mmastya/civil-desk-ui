@@ -1,6 +1,7 @@
 import withStyles from "isomorphic-style-loader/withStyles";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
+import { Picture } from "../../../../../../components/Picture/Picture";
 import s from "./Items.css";
 
 interface IItems {
@@ -18,7 +19,7 @@ export class Items extends Component<IItems, never> {
     return (
       <div className={`${s.root} ${turn ? s.revers : ""}`}>
         <div>
-          <img src={img} />
+          <Picture src={img} />
         </div>
         <div>
           <h3>{title}</h3>
