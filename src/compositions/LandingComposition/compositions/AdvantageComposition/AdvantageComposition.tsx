@@ -9,6 +9,7 @@ import first from "./images/first.png";
 import second from "./images/second.png";
 import third from "./images/third.png";
 
+// tslint:disable-next-line: no-empty-interface
 interface IAdventageComposition {}
 
 @withStyles(s)

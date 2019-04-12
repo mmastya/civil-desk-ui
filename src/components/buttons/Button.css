@@ -6,11 +6,11 @@
   vertical-align: middle;
   text-align: center;
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 14rem;
   font-weight: 0;
-  width: 115px;
-  height: 34px;
-  border-radius: 5px;
+  width: 115rem;
+  height: 34rem;
+  border-radius: 5rem;
 }
 
 .primary {
@@ -25,8 +25,8 @@
 .open {
   color: #ec4067;
   background-color: #ffffff;
-  border: 2px solid #ec4067;
-  font-size: 15px;
+  border: 2rem solid #ec4067;
+  font-size: 15rem;
   text-transform: uppercase;
   font-weight: 500;
 }

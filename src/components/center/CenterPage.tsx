@@ -3,6 +3,7 @@ import { observer } from "mobx-react";
 import React, { Component } from "react";
 import s from "./CenterPage.css";
 
+// tslint:disable-next-line: no-empty-interface
 interface ICenterPage {}
 
 @withStyles(s)

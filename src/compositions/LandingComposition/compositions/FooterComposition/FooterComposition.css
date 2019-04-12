@@ -14,16 +14,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 170px;
+  height: 170rem;
 }
 
 .root > div:nth-child(1) > h3 {
   color: #ffffff;
   font-family: var(--font-family);
-  font-size: 22px;
+  font-size: 22rem;
   font-style: italic;
-  margin: 0px;
-  margin-top: 130px;
+  margin: 0rem;
+  margin-top: 130rem;
   font-weight: normal;
 }
 
@@ -37,44 +37,44 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 60rem;
 
 }
 
 .root > div:nth-child(2) > form > input {
-  width: 230px;
-  height: 38px;
-  border-radius: 3px;
+  width: 230rem;
+  height: 38rem;
+  border-radius: 3rem;
   background-color: #ffffff;
   color: #959eaf;
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 14rem;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 60rem;
   border: none;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 10rem;
 }
 
 .root > div:nth-child(2) > form > input:nth-child(1) {
   background-image: url('./image/konvert.png');
   background-repeat: no-repeat;
-  background-position: 10px;
+  background-position: 10rem;
 }
 
 .root > div:nth-child(2) > form > input:nth-child(2) {
   background-image: url('./image/zamok.png');
   background-repeat: no-repeat;
-  background-position: 10px;
+  background-position: 10rem;
 }
 
 .root > div:nth-child(2) > form > button {
-  width: 230px;
-  height: 40px;
-  border-radius: 3px;
+  width: 230rem;
+  height: 40rem;
+  border-radius: 3rem;
   color: #ffffff;
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 14rem;
   text-transform: uppercase;
   font-weight: 500;
   border: none;
@@ -90,10 +90,10 @@
 .root > div:nth-child(3) > h4 {
   color: #959eaf;
   font-family: var(--font-family);
-  font-size: 13px;
+  font-size: 13rem;
   font-weight: 400;
-  margin: 0px;
-  margin-top: 45px;
+  margin: 0rem;
+  margin-top: 45rem;
 }
 
 .root > div:nth-child(3) > h4 > a {
@@ -109,9 +109,9 @@
 .root > div:nth-child(4) > h5 {
   color: #ffffff;
   font-family: var(--font-family);
-  font-size: 13px;
+  font-size: 13rem;
   font-weight: 400;
-  margin: 0px;
-  margin-bottom: 30px;
-  margin-top: 185px;
+  margin: 0rem;
+  margin-bottom: 30rem;
+  margin-top: 185rem;
 }

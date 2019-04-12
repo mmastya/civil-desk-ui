@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 170px;
+  height: 170rem;
   justify-content: center;
 }
 
@@ -18,39 +18,39 @@
   color: #2e384d;
   font-family: var(--font-family);
   font-weight: 550;
-  font-size: 36px;
-  margin: 0px;
-  margin-bottom: 25px;
+  font-size: 36rem;
+  margin: 0rem;
+  margin-bottom: 25rem;
 }
 
 .root > div:nth-child(1) > h3 {
   color: #959eaf;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 22px;
-  margin: 0px;
+  font-size: 22rem;
+  margin: 0rem;
 }
 
 .root > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 50rem;
 }
 
 .root > div:nth-child(2) > iframe {
-  width: 450px;
-  height: 300px;
-  margin-right: 90px;
+  width: 450rem;
+  height: 300rem;
+  margin-right: 90rem;
 }
 
  .video {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 500px;
-  height: 240px;
-  padding-top: 30px;
+  width: 500rem;
+  height: 240rem;
+  padding-top: 30rem;
 }
 
  .video > h3 {
@@ -58,23 +58,23 @@
   font-family: var(--font-family);
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0rem;
 }
 
  .video > p {
   color: #959eaf;
   font-family: var(--font-family);
-  font-size: 16px;
+  font-size: 16rem;
   font-weight: 400;
-  line-height: 22px;
-  margin: 0px;
+  line-height: 22rem;
+  margin: 0rem;
 }
 .video > h4 {
   color: #ec4067;
   font-family: var(--font-family);
   font-weight: 400;
-  line-height: 22px;
-  margin: 0px;
+  line-height: 22rem;
+  margin: 0rem;
 }
 
 .video > h4 > span {
@@ -84,8 +84,8 @@
 .root > div:nth-child(3) {
   display: flex;
   flex-direction: column;
-  height: 440px;
-  border-top: 1px solid #e6e6e6;
+  height: 440rem;
+  border-top: 1rem solid #e6e6e6;
 }
 
 .root > div:nth-child(3) > div {
@@ -93,15 +93,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 100rem;
 }
 
 .root > div:nth-child(3) > div > h3 {
   color: #959eaf;
   font-family: var(--font-family);
-  font-size: 22px;
+  font-size: 22rem;
   font-weight: 400;
-  margin: 0px;
+  margin: 0rem;
 }
 
 .root > div:nth-child(3) > ul {
@@ -109,11 +109,11 @@
   flex-direction: row;
   justify-content: flex-start;
   list-style: none;
-  padding: 0px;
+  padding: 0rem;
 }
 
 .root > div:nth-child(3) > ul > li {
-  margin-right: 50px;
+  margin-right: 50rem;
 }
 
 

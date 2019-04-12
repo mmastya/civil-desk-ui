@@ -12,15 +12,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 145px;
+  height: 145rem;
 }
 
 .container > div:first-child > h2 {
   text-align: center;
   color: #2f394e;
-  font-size: 36px;
+  font-size: 36rem;
   font-family: var(--font-family);
-  margin: 0px;
+  margin: 0rem;
   font-weight: 500;
 }
 
@@ -31,12 +31,12 @@
   justify-content: space-around;
   text-align: center;
   vertical-align: middle;
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
   list-style: none;
  }
 
  .container li {
-   margin-bottom: 70px;
+   margin-bottom: 70rem;
  }
 

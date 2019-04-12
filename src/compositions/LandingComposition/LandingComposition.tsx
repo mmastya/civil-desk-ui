@@ -11,7 +11,7 @@ import { OpportunitiesComposition } from "./compositions/OpportunitiesCompositio
 export class LandingComposition extends Component<ILandingComposition, never> {
   public render() {
     return (
-      <div style={{ minWidth: "1200px" }}>
+      <div>
         <HeaderComposition key="0" />
         <AdvantageComposition key="1" />
         <OpportunitiesComposition key="2" />

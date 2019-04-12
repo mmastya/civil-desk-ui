@@ -6,6 +6,7 @@ import s from "./HeaderComposition.css";
 import logo from "./images/logo.png";
 import mouse from "./images/mouse.png";
 
+// tslint:disable-next-line: no-empty-interface
 interface IHeaderComposition {}
 
 @withStyles(s)

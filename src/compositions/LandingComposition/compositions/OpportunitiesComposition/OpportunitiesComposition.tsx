@@ -8,6 +8,7 @@ import second_2 from "./images/second_2.png";
 import third_3 from "./images/third_3.png";
 import s from "./OpportunitiesComposition.css";
 
+// tslint:disable-next-line: no-empty-interface
 interface IOpportunitiesComposition {}
 
 @withStyles(s)

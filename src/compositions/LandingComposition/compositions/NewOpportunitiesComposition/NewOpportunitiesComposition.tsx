@@ -6,6 +6,7 @@ import { Demo } from "./components/Demo/Demo";
 import { Video } from "./components/Video/Video";
 import s from "./NewOpportunitiesComposition.css";
 
+// tslint:disable-next-line: no-empty-interface
 interface INewOpportunitiesComposition {}
 
 @withStyles(s)

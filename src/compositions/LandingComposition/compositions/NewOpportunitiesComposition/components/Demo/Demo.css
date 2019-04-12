@@ -4,27 +4,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 240px;
+  width: 240rem;
   text-align: left;
 }
 
 .root > Video {
-  width: 230px;
-  height: 150px;
+  width: 230rem;
+  height: 150rem;
 }
 
 .root > h2 {
   color: #2e384d;
-  font-size: 18px;
+  font-size: 18rem;
   font-weight: 400;
   font-family: var(--font-family);
 }
 
 .root > p {
-  width: 240px;
+  width: 240rem;
   color: #959eaf;
   font-family: var(--font-family);
-  font-size: 16px;
+  font-size: 16rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 22rem;
 }

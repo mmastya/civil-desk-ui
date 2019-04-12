@@ -2,8 +2,8 @@ import withStyles from "isomorphic-style-loader/withStyles";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 import s from "./FooterComposition.css";
-import konvert from "./image/konvert.png";
 
+// tslint:disable-next-line: no-empty-interface
 interface IFooterComposition {}
 
 @withStyles(s)

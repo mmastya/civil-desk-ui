@@ -6,21 +6,21 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-width: 450px;
-  height: 800px;
+  min-width: 450rem;
+  height: 800rem;
   background-color: #2e384d;
-  padding-top: 23px;
-  padding-bottom: 40px;
+  padding-top: 23rem;
+  padding-bottom: 40rem;
 }
 
 .root > div:first-of-type {
-  height: 34px;
+  height: 34rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 50rem;
+  padding-right: 50rem;
 }
 
 .root > div:first-of-type > div:first-of-type {
@@ -29,7 +29,7 @@
 }
 
 .root > div:first-of-type > div:first-of-type > img {
-  margin-right: 20px;
+  margin-right: 20rem;
 }
 
 .root > div:first-of-type > div:first-of-type > span {
@@ -37,7 +37,7 @@
   vertical-align: middle;
   color: #ffffff;
   font-family: var(--font-family);
-  font-size: 24px;
+  font-size: 24rem;
   font-weight: 400;
 }
 .root h1 {
@@ -45,14 +45,14 @@
   color: #ffffff;
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 30rem;
 }
 
 .root p {
   color: #959eaf;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 22px;
+  font-size: 22rem;
   text-align: center;
 }
 
