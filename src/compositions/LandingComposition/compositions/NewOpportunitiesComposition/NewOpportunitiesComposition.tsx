@@ -30,7 +30,7 @@ export class NewOpportunitiesComposition extends Component<INewOpportunitiesComp
                 от нас анализа позиций, занимаемых участниками в отношении поставленных задач.
               </p>
               <h4>
-                Посмотреть видеоролик <span>(1:32)</span>
+                Посмотреть видеоролик <a href="#">(1:32)</a>
               </h4>
             </div>
           </div>

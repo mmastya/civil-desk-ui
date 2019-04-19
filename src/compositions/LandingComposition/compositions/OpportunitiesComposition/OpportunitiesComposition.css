@@ -40,3 +40,8 @@
    margin-bottom: 70rem;
  }
 
+@media (max-width: 700px) {
+  .container > div:first-child > h2 {
+    font-size: 55rem;
+  }
+}

@@ -24,7 +24,11 @@ export class Discription extends Component<IDiscription, never> {
         </div>
         <h3>{title}</h3>
         <p>{text}</p>
-        <div className={s.button_open}>{link ? <Button title="Открыть" type="open" /> : null}</div>
+        {link ? (
+          <div className={s.button_open}>
+            <Button title="Открыть" type="open" />
+          </div>
+        ) : null}
       </div>
     );
   }

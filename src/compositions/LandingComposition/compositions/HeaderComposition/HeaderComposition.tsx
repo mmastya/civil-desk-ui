@@ -2,6 +2,7 @@ import { Button } from "components/buttons/Button";
 import withStyles from "isomorphic-style-loader/withStyles";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
+import { Picture } from "../../../../components/Picture/Picture";
 import s from "./HeaderComposition.css";
 import logo from "./images/logo.png";
 import mouse from "./images/mouse.png";
@@ -17,7 +18,7 @@ export class HeaderComposition extends Component<IHeaderComposition, never> {
       <div className={s.root}>
         <div>
           <div>
-            <img src={logo} alt="Logo" />
+            <Picture src={logo} />
             <span>CivilDesk</span>
           </div>
           <div>
@@ -33,7 +34,7 @@ export class HeaderComposition extends Component<IHeaderComposition, never> {
           </h1>
           <p>Развитие структуры играет важную роль в формировании</p>
         </div>
-        <img src={mouse} alt="mouse" />
+        <Picture src={mouse} />
       </div>
     );
   }
