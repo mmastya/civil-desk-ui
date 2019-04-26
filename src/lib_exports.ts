@@ -7,6 +7,7 @@ export { ILandingComposition } from "./interfaces/ILandingComposition";
 export { IPersonalComposition } from "./interfaces/IPersonalComposition";
 export { IStiffnessComposition } from "./interfaces/IStiffnessComposition";
 
+
 /**
  *
  *

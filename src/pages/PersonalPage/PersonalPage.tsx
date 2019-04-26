@@ -5,6 +5,7 @@ import React, { Component } from "react";
 
 @observer
 export class PersonalPage extends Component {
+  
   public render() {
     return <PersonalComposition {...personalAdapter} />;
   }
