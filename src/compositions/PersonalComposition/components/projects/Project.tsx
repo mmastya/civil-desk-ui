@@ -17,7 +17,9 @@ export class Project extends Component<IProject, never> {
     return (
       <div className={s.root}>
         <div>
-          <Picture src={project} />
+          <div className={s.img}>
+            <Picture src={project} />
+          </div>
         </div>
         <div>
           <span>{title}</span>

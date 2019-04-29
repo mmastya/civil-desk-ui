@@ -12,13 +12,16 @@ export class PersonalComposition extends Component<IPersonalComposition, never> 
   public render() {
     return (
       <div className={s.root}>
-        <Header title="Civildesk" text="user_name" />
+        <Header title="Civildesk" text="user_name" exit="Выйти" settings="Настройки" />
         <div className={s.page}>
+          Настройки
           <div>
             <span>Мои проекты</span>
-            <select>
-              <option>по дате создания</option>
-            </select>
+            <div>
+              <select>
+                <option>по дате создания</option>
+              </select>
+            </div>
           </div>
           <div>
             <ul>
@@ -26,9 +29,7 @@ export class PersonalComposition extends Component<IPersonalComposition, never> 
                 <Project title="Очень длинное название ..." />
               </li>
               <li>
-                <Project
-                  title="Очень длинное название ..."
-                />
+                <Project title="Очень длинное название ..." />
               </li>
             </ul>
           </div>

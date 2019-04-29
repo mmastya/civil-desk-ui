@@ -5,6 +5,8 @@ import s from "./Picture.css";
 
 interface IPicture {
   src: string;
+  width?: number;
+  height?: number;
 }
 
 @withStyles(s)
@@ -22,10 +24,21 @@ export class Picture extends Component<IPicture, never> {
       this.imageRef.current.onload = (event: Event) => {
         if (event.target) {
           const img: HTMLImageElement = event.target as HTMLImageElement;
-          const { width, height } = img.getBoundingClientRect();
+          const rect = img.getBoundingClientRect();
+          const { width, height } = this.props;
 
-          img.style.width = `${width}rem`;
-          img.style.height = `${height}rem`;
+          if (typeof width === "number") {
+            img.style.width = `${width}rem`;
+          } else {
+            img.style.width = `${rect.width}rem`;
+          }
+
+          if (typeof height === "number") {
+            img.style.height = `${height}rem`;
+          } else {
+            img.style.height = `${rect.height}rem`;
+          }
+
           img.style.visibility = `visible`;
         }
       };
