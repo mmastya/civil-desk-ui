@@ -13,7 +13,7 @@
   border-radius: 5rem;
   padding-left: 20rem;
   padding-right: 20rem;
-
+  cursor: pointer;
 }
 
 .primary {
@@ -32,6 +32,14 @@
   font-size: 15rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.gold {
+  color: #3b414e;
+  border: 1px solid #ffd76a;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255, 0.6);
 }
 
 @media (max-width: 700px) {

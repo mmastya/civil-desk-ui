@@ -26,10 +26,16 @@ export class PersonalComposition extends Component<IPersonalComposition, never> 
           <div>
             <ul>
               <li>
-                <Project title="Очень длинное название ..." />
+                <Project
+                  title="Очень длинное название
+                                металлической конструкции"
+                />
               </li>
               <li>
-                <Project title="Очень длинное название ..." />
+                <Project
+                  title="Очень длинное название
+                                металлической конструкции"
+                />
               </li>
             </ul>
           </div>
