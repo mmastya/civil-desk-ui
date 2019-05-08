@@ -6,5 +6,6 @@ export interface IRegisterComposition {
   };
   actions: {
     onDidMount(): Promise<void>;
+    onCreate(): Promise<void>;
   };
 }

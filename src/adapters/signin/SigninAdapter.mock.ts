@@ -12,6 +12,9 @@ export class SigninAdapter implements ISigninComposition {
     async onDidMount(): Promise<void> {
       console.log("DID_MOUNT");
     },
+    async onSignIn(): Promise<void> {
+      console.log("ON_SIGNIN");
+    },
   };
 }
 

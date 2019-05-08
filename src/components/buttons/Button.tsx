@@ -6,13 +6,14 @@ import s from "./Button.css";
 interface IButton {
   title: string;
   type?: "primary" | "defualt" | "open" | "gold";
+  onClick?(): Promise<void> | void;
 }
 
 @withStyles(s)
 @observer
 export class Button extends Component<IButton, never> {
   public render() {
-    const { title, type } = this.props;
+    const { title, type, ...other } = this.props;
     let buttonType = s.default;
 
     if (type === "primary") {
@@ -28,7 +29,7 @@ export class Button extends Component<IButton, never> {
     }
 
     return (
-      <button type="button" className={`${s.button} ${buttonType}`}>
+      <button type="button" className={`${s.button} ${buttonType}`} {...other}>
         {title}
       </button>
     );

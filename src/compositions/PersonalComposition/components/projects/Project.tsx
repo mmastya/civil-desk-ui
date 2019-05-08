@@ -12,14 +12,18 @@ import active from "./ProjectActive.css";
 import passive from "./ProjectPassive.css";
 
 interface IProject {
-  title: string;
+  adapter: { title: string };
+  actions: { onOpen?(): Promise<void>, onSettings(): Promise<void>,
+    onCopy(): Promise<void>,
+    onDelete(): Promise<void> };
 }
 
 @withStyles(s, active, passive)
 @observer
 export class Project extends Component<IProject, never> {
   public render() {
-    const { title } = this.props;
+    const { title } = this.props.adapter;
+    const { onOpen, onCopy, onSettings, onDelete } = this.props.actions;
     return (
       <div className={s.root}>
         <div className={passive.root}>
@@ -32,16 +36,16 @@ export class Project extends Component<IProject, never> {
           <div>
             <div>
               <div>
-                <Picture width={18} height={16} src={edit} />
+                <Picture width={18} height={16} src={edit} onClick={onSettings} />
               </div>
               <div>
-                <Picture width={18} height={18} src={copy} />
+                <Picture width={18} height={18} src={copy} onClick={onCopy}/>
               </div>
               <div>
-                <Picture width={18} height={18} src={bin} />
+                <Picture width={18} height={18} src={bin} onClick={onDelete}/>
               </div>
             </div>
-            <Button title="Открыть" type="gold" />
+            <Button title="Открыть" type="gold" onClick={onOpen} />
           </div>
           <span>{title}</span>
         </div>

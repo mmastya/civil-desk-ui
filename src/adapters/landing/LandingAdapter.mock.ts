@@ -12,6 +12,18 @@ export class LandingAdapter implements ILandingComposition {
     async onDidMount(): Promise<void> {
       console.log("DID_MOUNT");
     },
+    async onRegister(): Promise<void> {
+      console.log("ON_REGISTER");
+    },
+    async onSignIn(): Promise<void> {
+      console.log("ON_SIGNIN");
+    },
+    async onIsOpen(): Promise<void> {
+      console.log("ON_ISOPEN");
+    },
+    async onStartWork(): Promise<void> {
+      console.log("ON_STARTWORK");
+    },
   };
 }
 

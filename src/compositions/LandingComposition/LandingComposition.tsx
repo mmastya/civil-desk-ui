@@ -12,11 +12,11 @@ export class LandingComposition extends Component<ILandingComposition, never> {
   public render() {
     return (
       <div>
-        <HeaderComposition key="0" />
-        <AdvantageComposition key="1" />
+        <HeaderComposition key="0" {...this.props} />
+        <AdvantageComposition key="1" {...this.props} />
         <OpportunitiesComposition key="2" />
         <NewOpportunitiesComposition key="3" />
-        <FooterComposition key="4" />
+        <FooterComposition key="4" {...this.props} />
       </div>
     );
   }

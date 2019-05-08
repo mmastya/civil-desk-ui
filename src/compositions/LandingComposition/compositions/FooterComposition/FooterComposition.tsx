@@ -4,12 +4,15 @@ import React, { Component } from "react";
 import s from "./FooterComposition.css";
 
 // tslint:disable-next-line: no-empty-interface
-interface IFooterComposition {}
+interface IFooterComposition {
+  actions: { onStartWork(): Promise<void> };
+}
 
 @withStyles(s)
 @observer
 export class FooterComposition extends Component<IFooterComposition, never> {
   public render() {
+    const { onStartWork } = this.props.actions;
     return (
       <div className={s.root}>
         <div>
@@ -19,7 +22,9 @@ export class FooterComposition extends Component<IFooterComposition, never> {
           <form>
             <input type="text" name="email" placeholder="Введите E-mail" />
             <input type="password" name="password" placeholder="Придумайте Пароль" />
-            <button type="button"> начать работать</button>
+            <button type="button" onClick={onStartWork}>
+              начать работать
+            </button>
           </form>
         </div>
         <div>

@@ -8,12 +8,18 @@ import logo from "./images/logo.png";
 import mouse from "./images/mouse.png";
 
 // tslint:disable-next-line: no-empty-interface
-interface IHeaderComposition {}
+interface IHeaderComposition {
+  actions: {
+    onRegister(): Promise<void>;
+    onSignIn(): Promise<void>;
+  };
+}
 
 @withStyles(s)
 @observer
 export class HeaderComposition extends Component<IHeaderComposition, never> {
   public render() {
+    const { onRegister, onSignIn } = this.props.actions;
     return (
       <div className={s.root}>
         <div>
@@ -22,8 +28,8 @@ export class HeaderComposition extends Component<IHeaderComposition, never> {
             <span>CivilDesk</span>
           </div>
           <div>
-            <Button title="Регистрация" type="primary" />
-            <Button title="Войти" />
+            <Button title="Регистрация" type="primary" onClick={onRegister}/>
+            <Button title="Войти" onClick={onSignIn}/>
           </div>
         </div>
         <div>

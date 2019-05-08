@@ -73,13 +73,13 @@
 
 .sub_menu::before {
   content: "";
-  border: 20rem solid #ffffff;
+  border: 8rem solid #ffffff;
   border-top-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent;
   position: absolute;
-  right: 6rem;
-  top: -27rem;
+  right: 17rem;
+  top: -13rem;
 }
 
 .sub_menu > li {

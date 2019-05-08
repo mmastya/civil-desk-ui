@@ -4,9 +4,8 @@ import React, { Component } from "react";
 import s from "./Picture.css";
 
 interface IPicture {
-  src: string;
-  width?: number;
-  height?: number;
+   src: string; width?: number; height?: number;
+   onClick?(): Promise<void> | void;
 }
 
 @withStyles(s)
@@ -46,8 +45,8 @@ export class Picture extends Component<IPicture, never> {
   }
 
   public render() {
-    const { src } = this.props;
+    const { src, ...other} = this.props;
 
-    return <img src={src} ref={this.imageRef} style={{ visibility: "hidden" }} />;
+    return <img src={src} ref={this.imageRef} style={{ visibility: "hidden" }} {...other}/>;
   }
 }

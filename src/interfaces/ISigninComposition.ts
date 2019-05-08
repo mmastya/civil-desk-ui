@@ -6,5 +6,6 @@ export interface ISigninComposition {
   };
   actions: {
     onDidMount(): Promise<void>;
+    onSignIn(): Promise<void>;
   };
 }

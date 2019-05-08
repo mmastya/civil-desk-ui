@@ -11,17 +11,22 @@ import person from "./image/person.png";
 import settingsImage from "./image/settingsImage.png";
 
 interface IHeader {
-  title: string;
-  text: string;
-  exit: string;
-  settings: string;
+  adapter: { title: string; text: string; exit: string; settings: string };
+  actions: {
+    onCreateNewProject?(): Promise<void>,
+    onBell(): Promise<void>,
+    onPerson(): Promise<void>,
+    onComtrol(): Promise<void>,
+    onExit(): Promise<void>
+  };
 }
 
 @withStyles(s)
 @observer
 export class Header extends Component<IHeader, never> {
   public render() {
-    const { title, text, exit, settings } = this.props;
+    const { title, text, exit, settings } = this.props.adapter;
+    const { onCreateNewProject, onBell, onPerson, onComtrol, onExit } = this.props.actions;
     return (
       <div className={s.root}>
         <div className={s.logo}>
@@ -31,23 +36,23 @@ export class Header extends Component<IHeader, never> {
           <span>{title}</span>
         </div>
         <div className={s.constrols}>
-          <Button title="Новый проект" type="primary" />
+          <Button title="Новый проект" type="primary" onClick={onCreateNewProject} />
           <div className={s.bell}>
-            <Picture src={bell} />
+            <Picture src={bell} onClick={onBell}/>
           </div>
           <div className={s.user}>
             <span>{text}</span>
-            <Picture src={person} />
+            <Picture src={person} onClick={onPerson}/>
             <ul className={s.sub_menu}>
               <li>
                 <div>
-                  <Picture width={16} height={16} src={settingsImage} />
+                  <Picture width={16} height={16} src={settingsImage} onClick={onComtrol}/>
                 </div>
                 <span>{settings}</span>
               </li>
               <li>
                 <div>
-                  <Picture width={16} height={16} src={exitImage} />
+                  <Picture width={16} height={16} src={exitImage} onClick={onExit}/>
                 </div>
                 <span>{exit}</span>
               </li>

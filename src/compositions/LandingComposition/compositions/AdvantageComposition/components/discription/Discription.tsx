@@ -6,17 +6,23 @@ import React, { Component } from "react";
 import s from "./Discription.css";
 
 interface IDiscription {
-  title: string;
-  img: string;
-  text: string;
-  link?: string;
+  adapter: {
+    title: string;
+    img: string;
+    text: string;
+    link?: string;
+  };
+  actions: {
+    onIsOpen?(): Promise<void>;
+  };
 }
 
 @withStyles(s)
 @observer
 export class Discription extends Component<IDiscription, never> {
   public render() {
-    const { title, img, text, link } = this.props;
+    const { title, img, text, link } = this.props.adapter;
+    const { onIsOpen } = this.props.actions;
     return (
       <div className={s.space}>
         <div>
@@ -26,7 +32,7 @@ export class Discription extends Component<IDiscription, never> {
         <p>{text}</p>
         {link ? (
           <div className={s.button_open}>
-            <Button title="Открыть" type="open" />
+            <Button title="Открыть" type="open" onClick={onIsOpen} />
           </div>
         ) : null}
       </div>

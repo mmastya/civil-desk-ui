@@ -10,12 +10,17 @@ import second from "./images/second.png";
 import third from "./images/third.png";
 
 // tslint:disable-next-line: no-empty-interface
-interface IAdventageComposition {}
+interface IAdventageComposition {
+  actions: {
+    onIsOpen(): Promise<void>;
+  };
+}
 
 @withStyles(s)
 @observer
 export class AdvantageComposition extends Component<IAdventageComposition, never> {
   public render() {
+    const { onIsOpen } = this.props.actions;
     return (
       <CenterPage>
         <div className={s.root}>
@@ -26,30 +31,41 @@ export class AdvantageComposition extends Component<IAdventageComposition, never
             <ul>
               <li>
                 <Discription
-                  title="Доступ из любого места"
-                  img={first}
-                  text="Идейные соображения
-              высшего порядка, а также постоянный
-              количественный рост и сфера нашей активности
-              позволяет массового участия."
+                  adapter={{
+                    title: "Доступ из любого места",
+                    img: first,
+                    text: `Идейные соображения
+                        высшего порядка, а также постоянный
+                        количественный рост и сфера нашей активности
+                        позволяет массового участия.`,
+                  }}
+                  actions={{}}
                 />
               </li>
               <li>
                 <Discription
-                  title="Офлайн моделирование"
-                  img={second}
-                  text="Повседневная практика показывает,
+                  adapter={{
+                    title: "Офлайн моделирование",
+                    img: second,
+                    text: `Повседневная практика показывает,
               что постоянный количественный рост и сфера
-              нашей активности требуют определения и уточнения "
+              нашей активности требуют определения и уточнения`,
+                  }}
+                  actions={{}}
                 />
               </li>
               <li>
                 <Discription
-                  title="Встроенный сортамент"
-                  img={third}
-                  text="Система плоского графического
-              моделирования поперечных сечений элементов конструкций"
-                  link="/stiffness"
+                  adapter={{
+                    title: "Встроенный сортамент",
+                    img: third,
+                    text: `Система плоского графического
+              моделирования поперечных сечений элементов конструкций`,
+                    link: "/stiffness",
+                  }}
+                  actions={{
+                    onIsOpen,
+                  }}
                 />
               </li>
             </ul>
