@@ -15,6 +15,13 @@ export class RegisterAdapter implements IRegisterComposition {
     async onCreate(): Promise<void> {
       console.log("ON_CREATE");
     },
+    async onClose(): Promise<void> {
+      console.log("ON_CLOSE");
+    },
+    async onCloseAnyWhere(): Promise<void> {
+      console.log("ON_CLOSE_ANYWHERE");
+    },
+
   };
 }
 

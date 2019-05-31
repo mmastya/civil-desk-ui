@@ -42,8 +42,10 @@
   padding: 0rem;
   margin-left: 20rem;
   margin-top: 30rem;
+  flex-wrap: wrap;
 }
 
 .page > div:last-child > ul > li {
   margin-right: 10rem;
+  margin-bottom: 10rem;
 }

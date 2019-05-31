@@ -26,6 +26,7 @@
   font-size: 18rem;
   font-weight: 600;
   margin-left: 15rem;
+  cursor: default;
 }
 
 .constrols {
@@ -37,6 +38,7 @@
 
 .bell {
   margin: 0 20rem 0 30rem;
+  cursor: pointer;
 }
 
 .user {

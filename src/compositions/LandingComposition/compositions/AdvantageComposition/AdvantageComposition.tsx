@@ -1,4 +1,3 @@
-import { Button } from "components/buttons/Button";
 import withStyles from "isomorphic-style-loader/withStyles";
 import { observer } from "mobx-react";
 import React, { Component } from "react";

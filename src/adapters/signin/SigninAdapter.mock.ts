@@ -15,6 +15,12 @@ export class SigninAdapter implements ISigninComposition {
     async onSignIn(): Promise<void> {
       console.log("ON_SIGNIN");
     },
+    async onClose(): Promise<void> {
+      console.log("ON_CLOSE");
+    },
+    async onCloseAnyWhere(): Promise<void> {
+      console.log("ON_CLOSE_ANYWHERE");
+    },
   };
 }
 

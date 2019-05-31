@@ -12,6 +12,12 @@ export class ResetPasswordAdapter implements IResetPasswordComposition {
     async onDidMount(): Promise<void> {
       console.log("DID_MOUNT");
     },
+    async onClose(): Promise<void> {
+      console.log("ON_CLOSE");
+    },
+    async onCloseAnyWhere(): Promise<void> {
+      console.log("ON_CLOSE_ANYWHERE");
+    },
   };
 }
 

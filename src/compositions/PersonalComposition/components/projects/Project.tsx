@@ -12,18 +12,25 @@ import active from "./ProjectActive.css";
 import passive from "./ProjectPassive.css";
 
 interface IProject {
-  adapter: { title: string };
-  actions: { onOpen?(): Promise<void>, onSettings(): Promise<void>,
-    onCopy(): Promise<void>,
-    onDelete(): Promise<void> };
+  adapter: {
+    id: string;
+    title: string;
+  };
+  actions: {
+    onOpen(id: string): Promise<void>;
+    onSettings(id: string): Promise<void>;
+    onCopy(id: string): Promise<void>;
+    onDelete(id: string): Promise<void>;
+  };
 }
 
 @withStyles(s, active, passive)
 @observer
 export class Project extends Component<IProject, never> {
   public render() {
-    const { title } = this.props.adapter;
+    const { id, title } = this.props.adapter;
     const { onOpen, onCopy, onSettings, onDelete } = this.props.actions;
+
     return (
       <div className={s.root}>
         <div className={passive.root}>
@@ -36,16 +43,16 @@ export class Project extends Component<IProject, never> {
           <div>
             <div>
               <div>
-                <Picture width={18} height={16} src={edit} onClick={onSettings} />
+                <Picture width={18} height={16} src={edit} onClick={() => onSettings(id)} />
               </div>
               <div>
-                <Picture width={18} height={18} src={copy} onClick={onCopy}/>
+                <Picture width={18} height={18} src={copy} onClick={() => onCopy(id)} />
               </div>
               <div>
-                <Picture width={18} height={18} src={bin} onClick={onDelete}/>
+                <Picture width={18} height={18} src={bin} onClick={() => onDelete(id)} />
               </div>
             </div>
-            <Button title="Открыть" type="gold" onClick={onOpen} />
+            <Button title="Открыть" type="gold" onClick={() => onOpen(id)} />
           </div>
           <span>{title}</span>
         </div>

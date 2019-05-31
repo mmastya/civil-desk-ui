@@ -1,0 +1,48 @@
+@import "vars/fonts.css";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #353c4c;
+}
+
+.main_coordinate_system {
+  position: absolute;
+  bottom: 50rem;
+  left: 15rem;
+}
+
+.main_cube {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70rem;
+  right: 20rem;
+}
+
+.main_cube > select {
+  width: 120rem;
+  height: 20rem;
+  border: 0;
+  border-radius: 3rem;
+  background-color:#727782;
+  color: #232830;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-left: 30rem;
+}
+
+
+

@@ -1,0 +1,66 @@
+@import "vars/fonts.css";
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  background-color: #4b5773;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60rem;
+  height: 30rem;
+  border-right: 1rem solid #353c4c;
+}
+
+.first > span {
+  display: inline-block;
+  color: #f2f2f2;
+  font-family: var(--font-family);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.second_coordinates > li > span {
+  color: #b0c7fb;
+  font-family: var(--font-family);
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 12rem;
+}
+
+.second_coordinates {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  padding-left: 15rem;
+}
+
+.second_tools {
+  display: flex;
+  flex-direction: row;
+}
+
+.second_tools > li {
+  margin-right: 20rem;
+  cursor: pointer;
+}

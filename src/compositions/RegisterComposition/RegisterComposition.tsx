@@ -7,6 +7,8 @@ import s from "./RegisterComposition.css";
 interface IRegisterComposition {
   actions: {
     onCreate(): Promise<void>;
+    onClose(): Promise<void>;
+    onCloseAnyWhere(): Promise<void>;
   };
 }
 
@@ -14,10 +16,10 @@ interface IRegisterComposition {
 @observer
 export class RegisterComposition extends Component<IRegisterComposition, never> {
   public render() {
-    const { onCreate } = this.props.actions;
+    const { onCreate, onClose, onCloseAnyWhere } = this.props.actions;
     return (
       <div className={s.root}>
-        <PopUp title="Регистрация">
+        <PopUp adapter={{title:"Регистрация"}} actions={{onClose, onCloseAnyWhere}}>
           <form>
             <input type="text" placeholder={"Введите логин"} />
             <input type="text" placeholder={"Введите пароль"} />

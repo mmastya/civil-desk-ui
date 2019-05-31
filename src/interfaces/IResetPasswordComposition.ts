@@ -6,5 +6,7 @@ export interface IResetPasswordComposition {
   };
   actions: {
     onDidMount(): Promise<void>;
+    onClose(): Promise<void>;
+    onCloseAnyWhere(): Promise<void>;
   };
 }

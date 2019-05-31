@@ -7,6 +7,8 @@ import s from "./SigninComposition.css";
 interface ISigninComposition {
   actions: {
     onSignIn(): Promise<void>;
+    onClose(): Promise<void>;
+    onCloseAnyWhere(): Promise<void>;
   };
 }
 
@@ -14,10 +16,11 @@ interface ISigninComposition {
 @observer
 export class SigninComposition extends Component<ISigninComposition, never> {
   public render() {
-    const { onSignIn } = this.props.actions;
+    const { onSignIn,onClose,onCloseAnyWhere } = this.props.actions;
+
     return (
       <div className={s.root}>
-        <PopUp title="Войти">
+        <PopUp adapter={{title:"Вход"}} actions={{onClose, onCloseAnyWhere}}>
           <form>
             <input type="text" placeholder={"Введите логин или email"} />
             <button type="button" onClick={onSignIn}>

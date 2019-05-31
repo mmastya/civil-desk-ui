@@ -1,0 +1,128 @@
+@import "vars/fonts.css";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 350rem;
+  background-color: #f2f2f2;
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+
+.root__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.root__header > div:nth-child(1) {
+  background-color: #ffd76a;
+  padding: 12rem;
+}
+
+.root__header > div:nth-child(2) {
+
+}
+
+.root__header >div:nth-child(2) > span {
+  color: #232830;
+  font-family: var(--font-family);
+  font-size: 14rem;
+  font-weight: 400;
+}
+
+.root__header > div:nth-child(3) {
+  width: 100rem;
+  height: 30rem;
+  border-radius: 3rem;
+  background-color: #ffffff;
+  text-align: center;
+  margin-right: 5rem;
+}
+
+.root__header > div:last-child > span {
+  display: inline-block;
+  color: #3d4860;
+  font-family: var(--font-family);
+  font-size: 14rem;
+  font-weight: 300;
+  margin-top: 6rem;
+}
+
+.root__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.root__list > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.root__list > ul > li {
+  background-color: #ffffff;
+  height: 40rem;
+}
+
+.root__list > ul > li:nth-child(2) {
+  border-top: 1rem solid #e1e1e1;
+  border-bottom: 1rem solid #e1e1e1;
+}
+
+.root__list > ul > li:nth-child(3) {
+  border-top: 1rem solid #e1e1e1;
+}
+
+.root__list > ul > li > span {
+  display: inline-block;
+  color: #3b414e;
+  font-family: var(--font-family);
+  font-size: 14rem;
+  font-weight: 300;
+  margin-left: 10rem;
+  margin-top: 13rem;
+}
+
+.root__list > ul > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 20rem;
+  background-color: #eeeeee;
+}
+
+.root__list > ul > ul > li {
+  padding-top: 12rem;
+}
+
+.root__list > ul > ul > li > label {
+  color: #232830;
+  font-family: var(--font-family);
+  font-size: 14rem;
+  font-weight: 400;
+}
+
+.root__list > ul > ul > li > label > input {
+  margin-left: 92rem;
+}
+
+.root__list > ul > ul > li:nth-child(4)  {
+  padding: 0;
+
+}
+
+.root__list > ul > ul > li > label > select {
+  margin: 0;
+  margin-left: 121rem;
+  width: 169rem;
+  height: 30rem;
+  box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 3rem;
+}
+
+
+

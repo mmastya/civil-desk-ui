@@ -6,7 +6,13 @@ import close from "./image/close.png";
 import s from "./PopUp.css";
 
 interface IPopUp {
-  title: string;
+  adapter: {
+    title: string;
+  };
+  actions: {
+    onClose(): Promise<void>;
+    onCloseAnyWhere(): Promise<void>;
+  };
 }
 
 @withStyles(s)
@@ -24,16 +30,17 @@ export class PopUp extends Component<IPopUp, never> {
   }
 
   public renderModal() {
-    const { title } = this.props;
+    const { title } = this.props.adapter;
+    const { onClose, onCloseAnyWhere } = this.props.actions;
 
     return (
       <React.Fragment>
         <div className={s.mask} />
-        <div className={s.fixed_modal}>
+        <div className={s.fixed_modal} onClick={onCloseAnyWhere}>
           <div className={s.modal}>
             <div>
               <span>{title}</span>
-              <img src={close} alt="close" />
+              <img src={close} alt="close" onClick={onClose}/>
             </div>
             {this.props.children}
           </div>
@@ -41,5 +48,4 @@ export class PopUp extends Component<IPopUp, never> {
       </React.Fragment>
     );
   }
-
 }
