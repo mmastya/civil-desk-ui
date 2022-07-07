@@ -38,7 +38,7 @@
     "mobx-react": "5.4.3",
     "mobx-react-devtools": "6.1.1",
     "mobx-utils": "5.2.0",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "normalize.css": "8.0.1",
     "numeral": "2.0.6",
     "react": "16.8.6",
